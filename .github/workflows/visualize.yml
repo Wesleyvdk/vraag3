@@ -1,11 +1,10 @@
 on: push
-name: Repo Visualizer
-jobs:
- uses: githubocto/repo-visualizer@0.9.1
- with:
+name: main
+jobs: 
+   name: Repo Visualizer
+   uses: githubocto/repo-visualizer@0.9.1
+   with:
     root_path: wwwroot
     branch: main
     should_push: true
     artifact_name: diagram
-   
-          
